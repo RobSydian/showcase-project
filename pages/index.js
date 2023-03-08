@@ -1,17 +1,22 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
 import EventList from "../components/events/EventList";
-import { getFeaturedEvents } from "../dummy-data";
+import { getFeaturedEvents } from "../helpers/api-util";
 
-export default function Homepage() {
-  const router = useRouter();
-
-  const featuredEvents = getFeaturedEvents();
-  console.log(featuredEvents);
-
+export default function Homepage(props) {
+  console.log(props.events);
   return (
     <div>
-      <EventList items={featuredEvents} />
+      <EventList items={props.events} />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const featuredEvents = await getFeaturedEvents();
+
+  return {
+    props: {
+      events: featuredEvents,
+    },
+    revalidate: 1800,
+  };
 }
