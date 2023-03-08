@@ -30,8 +30,14 @@
   font-size: 1rem;
 }
 
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+}
+
 .navigation ul li {
   list-style: none;
+  padding: 0.5em 1em;
 }
 
 @media (min-width: 768px) {

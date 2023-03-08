@@ -1,0 +1,47 @@
+.container {
+  width: 50%;
+  margin: 4em auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.pageTitle {
+  text-align: center;
+}
+
+.counterDisplay {
+  padding: 0.5em;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 3rem;
+  background-color: black;
+  text-align: center;
+  border-radius: 0.5em;
+}
+
+.btnDisplay {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1em auto;
+  width: 50%;
+}
+
+.btn {
+  padding: 0.75em 1em;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 1rem;
+}
+
+.btn__increment {
+  background-color: lightblue;
+}
+
+.btn__decrement {
+  background-color: lightcoral;
+}
+
+.btn__decrement:disabled {
+  background-color: grey;
+}

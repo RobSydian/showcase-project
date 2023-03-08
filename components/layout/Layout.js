@@ -1,11 +1,11 @@
-import React from "react";
 import MainHeader from "./MainHeader";
+import classes from "./layout.module.css";
 
 export default function Layout(props) {
   return (
     <>
       <MainHeader />
-      <main>{props.children}</main>
+      <main className={classes.main}>{props.children}</main>
     </>
   );
 }
