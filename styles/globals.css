@@ -5,6 +5,9 @@
 }
 
 body {
+  --modal-radius: 1em;
+  --modal-radius-top: 1em 1em 0 0;
+  --modal-radius-bot: 0 0 1em 1em;
   --color-grey-50: hsl(265, 55%, 96%);
   --color-grey-100: hsl(265, 19%, 88%);
   --color-grey-200: hsl(265, 7%, 70%);

@@ -3,9 +3,9 @@ import { getFeaturedEvents } from "../helpers/api-util";
 
 export default function Homepage(props) {
   return (
-    <div>
+    <>
       <EventList items={props.events} />
-    </div>
+    </>
   );
 }
 
