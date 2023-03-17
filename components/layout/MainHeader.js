@@ -11,15 +11,15 @@ export default function MainHeader() {
       <nav className={classes.navigation}>
         <ul>
           <li>
+            <Link href="/games">Games</Link>
+          </li>
+          <li>
             <Link href="/counter">Counter</Link>
           </li>
           <li>
             <Link href="/events">All Events</Link>
           </li>
           {/* <li>
-            <Link href="/events">All Events</Link>
-          </li>
-          <li>
             <Link href="/events">All Events</Link>
           </li> */}
         </ul>
